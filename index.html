@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess the Number game</title>
+    <!--Google Fonts Link.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+
+    <!--Giving the styling to the page.-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav {
+            background-color: black;
+            font-size: 20px;
+            height: 40px;
+            text-align: center;
+        }
+
+        body {
+            background: linear-gradient(to left, teal, green);
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        a {
+            color: blue;
+        }
+
+        div {
+            display: flex;
+        }
+
+        #download_source_code_button{
+            margin-left: 5%;
+            height: 100px;
+            margin-top: 50%;
+            font-size: 30px;
+            width: 250px;
+            border: solid;
+            border-radius: 5px;
+            background-color: skyblue;
+            float: right;
+        }
+
+        #download_source_code_button:hover{
+            background-color: blue;
+        }
+        #download_button {
+            margin-left: 5%;
+            height: 100px;
+            margin-top: 50%;
+            font-size: 30px;
+            width: 250px;
+            border: solid;
+            border-radius: 5px;
+            background-color: skyblue;
+            float: right;
+        }
+
+        #download_button:hover {
+            background-color: blue;
+        }
+
+        button {
+            border-radius: 4px;
+            background-color: #5ca1e1;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 32px;
+            padding: 16px;
+            width: 220px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 36px;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+        }
+
+        button {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        button:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 14px;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            padding-right: 24px;
+            padding-left: 8px;
+        }
+
+        button:hover:after {
+            opacity: 1;
+            right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li style="margin-left: 50%;"><b><a href="#">Home</a></b></li>
+            <li style="margin-left: 5%; "><b><a href="game.exe" downlaod>Download Game</b></a></li>
+        </ul>
+    </nav>
+
+    <h2
+        style="border: solid; border-radius: 5px; background-color: skyblue; width: 10%; margin-top: 2%; margin-left: 5%;">
+        Welcome,</h2>
+    <div class="content">
+        <p
+            style="border: solid; border-radius: 5px; background-color: yellowgreen; width: 45%; margin-top: 2%; margin-left: 5%; font-size: larger;">
+            This is a game download site made with love by <i>Rudra Rathi</i>. <br>
+            The game is also developed by the author of this site. The game is full of fun. <br>
+            The name of the game is "Guess the number" and is written in pure C. <br>
+            The source code of this game is also given here. <br> <br>
+
+            <b>How to play - </b> <br>
+            (1) Download and click on the downloaded file. <br> <br>
+
+            <b>Single PLayer</b> - Keep guessing the number until you win. Click on the file again to restart. <br>
+
+            <b>Multi PLayer</b> - After you will guess the right number the game will tell you in how many guesses you
+            guessed it. <br>
+            the player you guesses the number in the least guesses wins.<br>
+            ENJOY ! ! !
+        </p>
+
+        <a href="game.exe" download ><button type="button" id="download_button">Download Game</button></a>
+        <a href="game.c" download ><button type="button" id="download_source_code_button">Dowload Source Code</button></a>
+    </div>
+</body>
+
+</html>
